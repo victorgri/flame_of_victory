@@ -1,0 +1,20 @@
+.footer {
+  padding-bottom: 20px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__text {
+    font-family: sans-serif;
+    color: #fff;
+  }
+
+  &__link {
+    text-decoration: underline;
+    font-family: sans-serif;
+    color: #fff;
+  }
+}

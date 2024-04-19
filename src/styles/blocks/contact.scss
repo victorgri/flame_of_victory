@@ -1,0 +1,24 @@
+.contact {
+  &__bottom {
+    border: 1px solid #5D6469;
+    padding: 40px 0;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__link {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+    align-items: center;
+
+    &--image {
+      width: 32px;
+    }
+  }
+}

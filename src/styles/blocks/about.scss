@@ -1,0 +1,16 @@
+.about {
+  &__bottom {
+    display: flex;
+    gap: 24px;
+    align-items: start;
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__text {
+    font-family: sans-serif;
+    color: #fff;
+  }
+}
