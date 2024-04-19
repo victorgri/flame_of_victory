@@ -1,0 +1,13 @@
+.donate {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    color: #fff;
+  }
+}
