@@ -6,6 +6,7 @@ export const Donate = () => {
           <a
             href="https://send.monobank.ua/jar/3X8W3Dop9C"
             className="donate__link"
+            target="_blank"
           >
             <img src="./img/QR.jpg" alt="qr" />
           </a>

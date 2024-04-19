@@ -16,6 +16,11 @@
     font-family: sans-serif;
     color: #fff;
     align-items: center;
+    transition-duration: .5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     &--image {
       width: 32px;

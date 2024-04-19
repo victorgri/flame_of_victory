@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer";
 import Header from "./components/Header";
 import { Projects } from "./components/Projects";
 import { Report } from "./components/Reports";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 
 
@@ -19,7 +20,8 @@ function App() {
       <Report />
       <Donate />
       <Contact />
-      <Footer/>
+      <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }
