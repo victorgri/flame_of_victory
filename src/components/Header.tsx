@@ -11,7 +11,7 @@ export const Header = () => {
           <a href="/" className="header__logo">
             <img
               className="w-100 rounded-circle m-0 p-0"
-              src="/img/logo.jpg"
+              src="./img/logo.jpg"
               alt="logo"
             />
           </a>
