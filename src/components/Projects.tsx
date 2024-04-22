@@ -9,8 +9,8 @@ export const Projects = () => {
         <div className="projects__inner">
           <h3 className="section__title">Projects &gt;</h3>
 
-          <div className="projects__cards d-flex gap-3">
-            <Card>
+          <div className="projects__cards">
+            <Card className="projects__card">
               <Card.Img variant="top" src="https://placehold.co/300x150" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -21,7 +21,7 @@ export const Projects = () => {
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
-            <Card>
+            <Card className="projects__card">
               <Card.Img variant="top" src="https://placehold.co/300x150" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -32,7 +32,7 @@ export const Projects = () => {
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
-            <Card>
+            <Card className="projects__card">
               <Card.Img variant="top" src="https://placehold.co/300x150" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -43,7 +43,7 @@ export const Projects = () => {
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
-            <Card>
+            <Card className="projects__card">
               <Card.Img variant="top" src="https://placehold.co/300x150" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>

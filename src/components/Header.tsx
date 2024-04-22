@@ -1,13 +1,15 @@
+import classNames from "classnames";
+import { useState } from "react";
 import { Button } from "react-bootstrap";
 
 
 export const Header = () => {
-
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <header className="header">
       <div className="container">
-        <div className="header__inner d-flex justify-content-between align-items-center p-3">
+        <div className="header__inner">
           <a href="/" className="header__logo">
             <img
               className="w-100 rounded-circle m-0 p-0"
@@ -15,7 +17,8 @@ export const Header = () => {
               alt="logo"
             />
           </a>
-          <nav className="header__nav d-flex gap-3">
+
+          <nav className={classNames("header__nav", { active: isActive })}>
             <a href="#about" className="header__link">
               About
             </a>
@@ -31,8 +34,16 @@ export const Header = () => {
           </nav>
 
           <a href="#donate" className="header__button">
-            <Button variant="danger">DONATE</Button>
+            <Button className="header__btn" variant="danger">
+              DONATE
+            </Button>
           </a>
+          <div
+            onClick={() => setIsActive(!isActive)}
+            className={classNames("header__burger", { active: isActive })}
+          >
+            <span></span>
+          </div>
         </div>
       </div>
     </header>

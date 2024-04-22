@@ -1,0 +1,13 @@
+.projects {
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  &__card {
+    width: 320px;
+  }
+
+}

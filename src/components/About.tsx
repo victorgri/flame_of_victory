@@ -6,7 +6,7 @@ export const About = () => {
           <h3 className="section__title">About &gt;</h3>
 
           <div className="about__bottom">
-            <img src="https://placehold.co/600x400" alt="photo" />
+            <img src="https://placehold.co/600x400" alt="photo" className="about__img"/>
             <div className="about__info">
               <h1 className="about__title">Who we are?</h1>
               <p className="about__text">
