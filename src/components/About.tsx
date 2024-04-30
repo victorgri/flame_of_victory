@@ -1,3 +1,29 @@
+import { motion } from 'framer-motion';
+
+const animation1 = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { delay: 0.5 }
+  }
+}
+
+const animation2 = {
+  hidden: {
+    x: 100,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { delay: 0.5 },
+  },
+};
+
 export const About = () => {
   return (
     <section className="about" id="about">
@@ -5,9 +31,13 @@ export const About = () => {
         <div className="about__inner">
           <h3 className="section__title">About &gt;</h3>
 
-          <div className="about__bottom">
-            <img src="https://placehold.co/600x400" alt="photo" className="about__img"/>
-            <div className="about__info">
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            className="about__bottom"
+          >
+            <motion.img variants={animation1} src="https://placehold.co/600x400" alt="photo" className="about__img"/>
+            <motion.div variants={animation2} className="about__info">
               <h1 className="about__title">Who we are?</h1>
               <p className="about__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -24,8 +54,8 @@ export const About = () => {
                 commodi, placeat numquam sequi tempora eius alias incidunt
                 quisquam.{" "}
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>

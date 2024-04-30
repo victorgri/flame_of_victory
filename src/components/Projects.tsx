@@ -1,4 +1,17 @@
+import { motion } from 'framer-motion';
 import { Button, Card } from "react-bootstrap";
+
+const animation2 = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { delay: 0.5 },
+  },
+};
 
 export const Projects = () => {
 
@@ -6,10 +19,14 @@ export const Projects = () => {
   return (
     <section className="projects" id="projects">
       <div className="container">
-        <div className="projects__inner">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          className="projects__inner"
+        >
           <h3 className="section__title">Projects &gt;</h3>
 
-          <div className="projects__cards">
+          <motion.div variants={animation2} className="projects__cards">
             <Card className="projects__card">
               <Card.Img variant="top" src="https://placehold.co/300x150" />
               <Card.Body>
@@ -54,8 +71,8 @@ export const Projects = () => {
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
