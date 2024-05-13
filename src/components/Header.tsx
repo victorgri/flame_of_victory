@@ -19,16 +19,32 @@ export const Header = () => {
           </a>
 
           <nav className={classNames("header__nav", { active: isActive })}>
-            <a href="#about" className="header__link">
+            <a
+              href="#about"
+              className="header__link"
+              onClick={() => setIsActive(!isActive)}
+            >
               About
             </a>
-            <a href="#projects" className="header__link">
+            <a
+              href="#projects"
+              className="header__link"
+              onClick={() => setIsActive(!isActive)}
+            >
               Projects
             </a>
-            <a href="#report" className="header__link">
+            <a
+              href="#report"
+              className="header__link"
+              onClick={() => setIsActive(!isActive)}
+            >
               Photo Reports
             </a>
-            <a href="#contacts" className="header__link">
+            <a
+              href="#contacts"
+              className="header__link"
+              onClick={() => setIsActive(!isActive)}
+            >
               Contact us
             </a>
           </nav>
