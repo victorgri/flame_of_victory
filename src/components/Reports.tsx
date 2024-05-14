@@ -16,7 +16,11 @@ export const Report = () => {
           <div className="report__bottom">
             <Carousel activeIndex={index} onSelect={handleSelect}>
               <Carousel.Item>
-                <img src="https://placehold.co/600x400" className="report__img"alt="slide-1" />
+                <img
+                  src="./img/report1.jpg"
+                  className="report__img"
+                  alt="slide-1"
+                />
                 <Carousel.Caption>
                   <h3>First slide label</h3>
                   <p>
@@ -25,7 +29,11 @@ export const Report = () => {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img src="https://placehold.co/600x400" className="report__img"alt="slide-2" />
+                <img
+                  src="./img/report2.jpg"
+                  className="report__img"
+                  alt="slide-2"
+                />
                 <Carousel.Caption>
                   <h3>Second slide label</h3>
                   <p>
@@ -34,7 +42,11 @@ export const Report = () => {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img src="https://placehold.co/600x400" className="report__img"alt="slide-3" />
+                <img
+                  src="./img/report3.jpg"
+                  className="report__img"
+                  alt="slide-3"
+                />
                 <Carousel.Caption>
                   <h3>Third slide label</h3>
                   <p>

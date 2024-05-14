@@ -25,6 +25,7 @@ const animation2 = {
 };
 
 export const About = () => {
+  const viewWidth = window.innerWidth;
   return (
     <section className="about" id="about">
       <div className="container">
@@ -36,7 +37,13 @@ export const About = () => {
             whileInView='visible'
             className="about__bottom"
           >
-            <motion.img variants={animation1} src="https://placehold.co/600x400" alt="photo" className="about__img"/>
+            <motion.img
+              className="about__img"
+              variants={animation1}
+              src="./img/fond-about.jpg"
+              alt="photo"
+              style={viewWidth > 768 ? { width: '600px'} : {width: '100%'}}
+            />
             <motion.div variants={animation2} className="about__info">
               <h1 className="about__title">Who we are?</h1>
               <p className="about__text">

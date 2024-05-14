@@ -28,7 +28,7 @@ export const Projects = () => {
 
           <motion.div variants={animation2} className="projects__cards">
             <Card className="projects__card">
-              <Card.Img variant="top" src="https://placehold.co/300x150" />
+              <Card.Img variant="top" src="./img/proj1.jpg" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
@@ -39,7 +39,7 @@ export const Projects = () => {
               </Card.Body>
             </Card>
             <Card className="projects__card">
-              <Card.Img variant="top" src="https://placehold.co/300x150" />
+              <Card.Img variant="top" src="./img/proj2.jpg" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
@@ -50,7 +50,7 @@ export const Projects = () => {
               </Card.Body>
             </Card>
             <Card className="projects__card">
-              <Card.Img variant="top" src="https://placehold.co/300x150" />
+              <Card.Img variant="top" src="./img/proj3.jpg" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
@@ -61,7 +61,7 @@ export const Projects = () => {
               </Card.Body>
             </Card>
             <Card className="projects__card">
-              <Card.Img variant="top" src="https://placehold.co/300x150" />
+              <Card.Img variant="top" src="./img/proj4.jpg" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
