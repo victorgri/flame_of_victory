@@ -49,18 +49,20 @@ export const Header = () => {
             </a>
           </nav>
 
-          <a
-            href="https://send.monobank.ua/jar/3X8W3Dop9C"
-            className="header__button"
-          >
-            <Button className="header__btn" variant="danger">
-              DONATE
-            </Button>
-          </a>
-          <div
-            onClick={() => setIsActive(!isActive)}
-            className={classNames("header__burger", { active: isActive })}
-          >
+          <div className="header__buttons">
+              <a
+                href="https://send.monobank.ua/jar/3X8W3Dop9C"
+                className="header__button"
+              >
+                <Button className="header__btn" variant="danger">
+                  DONATE
+                </Button>
+              </a>
+              <div
+                onClick={() => setIsActive(!isActive)}
+                className={classNames("header__burger", { active: isActive })}
+              >
+          </div>
             <span></span>
           </div>
         </div>

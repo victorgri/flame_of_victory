@@ -159,4 +159,10 @@
     position: relative;
     z-index: 5;
   }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 }

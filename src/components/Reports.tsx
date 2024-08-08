@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Container } from "react-bootstrap";
 
 export const Report = () => {
   const [index, setIndex] = useState(0);
@@ -9,7 +9,7 @@ export const Report = () => {
   };
   return (
     <section className="report" id="report">
-      <div className="container">
+      <Container>
         <div className="report__inner">
           <h3 className="section__title">Photo Report &gt;</h3>
 
@@ -58,7 +58,7 @@ export const Report = () => {
             </Carousel>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

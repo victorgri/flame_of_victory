@@ -1,30 +1,15 @@
-import { motion } from "framer-motion";
-import { Card } from "react-bootstrap";
-
-const animation2 = {
-  hidden: {
-    y: -100,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: { delay: 0.5 },
-  },
-};
+import { Card, Container } from "react-bootstrap";
 
 export const Projects = () => {
   return (
     <section className="projects" id="projects">
-      <div className="container">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
+      <Container>
+        <div
           className="projects__inner"
         >
           <h3 className="section__title">Projects &gt;</h3>
 
-          <motion.div variants={animation2} className="projects__cards">
+          <div className="projects__cards">
             <Card className="projects__card">
               <Card.Img variant="top" src="./img/proj1.jpg" />
               <Card.Body>
@@ -72,9 +57,9 @@ export const Projects = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </motion.div>
-        </motion.div>
-      </div>
+          </div>
+        </div>
+      </Container>
     </section>
   );
 };
