@@ -24,32 +24,35 @@ export const Header = () => {
               className="header__link"
               onClick={() => setIsActive(!isActive)}
             >
-              About
+              Про нас
             </a>
             <a
               href="#projects"
               className="header__link"
               onClick={() => setIsActive(!isActive)}
             >
-              Projects
+              Проекти
             </a>
             <a
               href="#report"
               className="header__link"
               onClick={() => setIsActive(!isActive)}
             >
-              Photo Reports
+              Фотозвіт
             </a>
             <a
               href="#contacts"
               className="header__link"
               onClick={() => setIsActive(!isActive)}
             >
-              Contact us
+              Контакти
             </a>
           </nav>
 
-          <a href="#donate" className="header__button">
+          <a
+            href="https://send.monobank.ua/jar/3X8W3Dop9C"
+            className="header__button"
+          >
             <Button className="header__btn" variant="danger">
               DONATE
             </Button>

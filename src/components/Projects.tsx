@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { Button, Card } from "react-bootstrap";
+import { motion } from "framer-motion";
+import { Card } from "react-bootstrap";
 
 const animation2 = {
   hidden: {
@@ -14,8 +14,6 @@ const animation2 = {
 };
 
 export const Projects = () => {
-
-
   return (
     <section className="projects" id="projects">
       <div className="container">
@@ -30,45 +28,48 @@ export const Projects = () => {
             <Card className="projects__card">
               <Card.Img variant="top" src="./img/proj1.jpg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Співпраця з закладами освіти</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Створення мережі громадських та молодіжних організацій, освіти
+                  та дозвілля. Відновлення фізичного та психологічного стану
+                  людей правобережної Херсонщини
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
+
             <Card className="projects__card">
               <Card.Img variant="top" src="./img/proj2.jpg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Реконструкція будівель</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Відбудова інфраструктури, приватних зруйнованих будинків,
+                  відновлення господарської спроможності селян
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
+
             <Card className="projects__card">
               <Card.Img variant="top" src="./img/proj3.jpg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>
+                  Взаємодія з закордонними благодійними фондами
+                </Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Спільна праця над відновленням та покращенням основних сфер
+                  життя мешканців Херсонської області
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
+
             <Card className="projects__card">
-              <Card.Img variant="top" src="./img/proj4.jpg" />
+              <Card.Img variant="top" src="./img/proj3.jpg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>
+                  Гуманітарна допомога мешканцям пошкоджених міст
+                </Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Ліки, вода, хліб, продукти та речі першої необхідності
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
           </motion.div>
@@ -76,5 +77,4 @@ export const Projects = () => {
       </div>
     </section>
   );
-}
-
+};

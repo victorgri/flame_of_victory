@@ -11,7 +11,7 @@ export const Donate = () => {
             <img src="./img/QR.jpg" alt="qr" />
           </a>
           <p className="donate__text">
-            Click on QR code or scan it to donate for our fond.
+            QR code для охочих підтримати наш благодійний фонд.
           </p>
         </div>
       </div>

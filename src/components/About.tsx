@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const animation1 = {
   hidden: {
@@ -8,9 +8,9 @@ const animation1 = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { delay: 0.5 }
-  }
-}
+    transition: { delay: 0.5 },
+  },
+};
 
 const animation2 = {
   hidden: {
@@ -33,8 +33,8 @@ export const About = () => {
           <h3 className="section__title">About &gt;</h3>
 
           <motion.div
-            initial='hidden'
-            whileInView='visible'
+            initial="hidden"
+            whileInView="visible"
             className="about__bottom"
           >
             <motion.img
@@ -42,24 +42,19 @@ export const About = () => {
               variants={animation1}
               src="./img/fond-about.jpg"
               alt="photo"
-              style={viewWidth > 768 ? { width: '600px'} : {width: '100%'}}
+              style={viewWidth > 768 ? { width: "600px" } : { width: "100%" }}
             />
             <motion.div variants={animation2} className="about__info">
-              <h1 className="about__title">Who we are?</h1>
+              <h1 className="about__title">Про нас</h1>
               <p className="about__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam a perferendis neque aperiam dicta minima quo
-                voluptate deleniti dolor, dignissimos earum, tempore maxime
-                sunt? Impedit distinctio nisi obcaecati ullam recusandae facilis
-                excepturi quos corrupti? Dolores maxime non iusto eum enim
-                expedita perferendis. Aliquid iusto quis sit fugiat modi dolorum
-                harum dolore, aspernatur optio incidunt nostrum sunt, eos magnam
-                reiciendis fugit non adipisci blanditiis! Soluta, doloribus in,
-                aperiam debitis temporibus deleniti delectus, quia iste velit
-                sed quo non odio. Deserunt nisi voluptates animi nostrum.
-                Pariatur ut reprehenderit dolorum itaque impedit sunt accusamus,
-                commodi, placeat numquam sequi tempora eius alias incidunt
-                quisquam.{" "}
+                Вогонь перемоги — український благодійний фонд. Наша діяльність
+                спрямована на реалізацію дій, що призводять до соціального,
+                економічного та духовного покращення стану обʼєднаних
+                територіальних громад правобережної частини Херсонської області.
+                <br/>
+                Наша місія — допомога громадянам на пошкоджених територіях
+                Херсонської області. Залучення ресурсів і організація зборів для
+                медиків та цивільного населення. Відбудова зруйнованих будівель.
               </p>
             </motion.div>
           </motion.div>
@@ -67,4 +62,4 @@ export const About = () => {
       </div>
     </section>
   );
-}
+};
